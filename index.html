@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="i/favicon.png" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- AOS CSS -->
+	<link rel="stylesheet" href="css/aos.css">
+	<!-- FontAwesome JS -->
+	<script src="https://kit.fontawesome.com/efc6f1162d.js" crossorigin="anonymous"></script>
+	<!-- Splide CSS -->
+	<link rel="stylesheet" href="css/splide.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Navigation Mobile type 1 -->
+	<a href="#" class="open_menu bg-light radius_full">
+		<i class="fas fa-bars lh-40">
+		</i>
+	</a>
+	<div class="navigation_mobile bg-dark type1">
+		<a href="#" class="close_menu color-white">
+			<i class="fas fa-times">
+			</i>
+		</a>
+		<div class="px-40 pt-60 pb-60 inner">
+			<a href="#" class="mb-30 link img_link">
+				<img src="i/logo-white.svg" alt="Logo" class="img-fluid">
+			</a>
+			<div>
+				<a href="#" class="f-heading f-22 link color-white mb-20">
+					Home
+				</a>
+			</div>
+			<div>
+				<a href="#" class="f-heading f-22 link color-white mb-20">
+					Tour
+				</a>
+			</div>
+			<div>
+				<a href="#" class="f-heading f-22 link color-white mb-20">
+					Mobile Apps
+				</a>
+			</div>
+			<div>
+				<a href="#" class="f-heading f-22 link color-white mb-20">
+					Pricing
+				</a>
+			</div>
+			<div>
+				<a href="#" class="f-heading f-22 link color-white mb-20">
+					Development
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					Help
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					F.A.Q.
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					Support
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					About Us
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					Blog
+				</a>
+			</div>
+			<div>
+				<a href="#" class="link color-white op-3 mb-15">
+					Careers
+				</a>
+			</div>
+			<div class="socials mt-40">
+				<a href="#" target="_blank" class="link color-white f-18 mr-20">
+					<i class="fab fa-twitter">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-white f-18 mr-20">
+					<i class="fab fa-facebook">
+					</i>
+				</a>
+				<a href="#" target="_blank" class="link color-white f-18 mr-20">
+					<i class="fab fa-google-plus-g">
+					</i>
+				</a>
+			</div>
+			<div class="mt-50 f-14 light color-white op-3 copy">
+				© 2021 Designmodo. All rights reserved.
+			</div>
+		</div>
+	</div>
+	<!-- Header 1 -->
+	<header class="pt-195 pb-110 bg-light header_1">
+		<!-- <nav class="header_menu_1 pt-30 pb-30 mt-30">
+			<div class="container px-xl-0">
+				<div class="row justify-content-center align-items-center f-18 medium">
+					<div class="col-lg-3">
+						<a href="#" class="link img_link">
+							<img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="600">
+						</a>
+					</div>
+					<div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="450">
+						<a href="#" class="link color-heading mx-15">
+							Inicio
+						</a>
+						<a href="#" class="link color-heading mx-15">
+							Features
+						</a>
+						<a href="#" class="link color-heading mx-15">
+							Blog
+						</a>
+						<a href="#" class="link color-heading mx-15">
+							Shop
+						</a>
+						<a href="#" class="link color-heading f-16 mx-15">
+							<i class="fas fa-search">
+							</i>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-end align-items-center" data-aos="zoom-in"
+						data-aos-delay="600">
+						<a href="#" class="link mr-20 color-heading">
+							Sign In
+						</a>
+						<a href="#" class="btn sm action-1">
+							Sign Up
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav> -->
+		<div class="container">
+			<!-- <div class="mb-3 text-center d-block d-xl-none">
+				<a href="#" class="link img_link">
+					<img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="0">
+				</a>
+			</div> -->
+			<h1 class="big text-center" data-aos="zoom-in" data-aos-delay="0">
+				OpenWeather API
+			</h1>
+			<div class="mw-600 mx-auto mt-30 f-22 color-heading text-center text-adaptive" data-aos="zoom-in"
+				data-aos-delay="150">
+				¿Qué día hará hoy? ¡¡Infórmate sobre el tiempo!! Mira el pronóstico más actualizado y descubre el temporal que
+				hará antes de practicar tu deporte favorito o salir a pasear
+			</div>
+			<div class="mt-50 text-center buttons" data-aos="zoom-in" data-aos-delay="300">
+				<div>
+					<a class="btn lg action-1" id="btnCity">
+						Busca tu ciudad
+					</a>
+				</div>
+				<div>
+					<a href="#" class="link mt-15 action-1 f-18 medium">
+						Learn More
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container bg-light">
+		<div class="d-flex justify-content-center px-5 mt-50">
+			<div class="search">
+				<input type="text" class="search-input" placeholder="Busca tu ciudad..." name="">
+				<button href="#" class="search-icon">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</div>
+		<div id="image-slider" class="splide mt-50 justify-content-center">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="row d-flex justify-content-center align-items-center h-100">
+							<div class="col">
+
+								<div class="card">
+									<div class="card-body p-4">
+
+										<div class="d-flex">
+											<h6 class="flex-grow-1 cardTitle">Pamplona</h6>
+											<h6>15:07</h6>
+										</div>
+
+										<div class="d-flex flex-column text-center mt-5 mb-4">
+											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+											<span class="small" style="color: #868B94">Stormy</span>
+										</div>
+
+										<div class="d-flex align-items-center">
+											<div class="flex-grow-1" style="font-size: 1rem;">
+												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+													</span></div>
+												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
+												</div>
+												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												</div>
+											</div>
+											<div>
+												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
+													width="100px">
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="row d-flex justify-content-center align-items-center h-100">
+							<div class="col">
+
+								<div class="card" style="color: #4B515D; border-radius: 35px;">
+									<div class="card-body p-4">
+
+										<div class="d-flex">
+											<h6 class="flex-grow-1">Warsaw</h6>
+											<h6>15:07</h6>
+										</div>
+
+										<div class="d-flex flex-column text-center mt-5 mb-4">
+											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+											<span class="small" style="color: #868B94">Stormy</span>
+										</div>
+
+										<div class="d-flex align-items-center">
+											<div class="flex-grow-1" style="font-size: 1rem;">
+												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+													</span></div>
+												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
+												</div>
+												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												</div>
+											</div>
+											<div>
+												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
+													width="100px">
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="row d-flex justify-content-center align-items-center h-100">
+							<div class="col">
+
+								<div class="card" style="color: #4B515D; border-radius: 35px;">
+									<div class="card-body p-4">
+
+										<div class="d-flex">
+											<h6 class="flex-grow-1">Warsaw</h6>
+											<h6>15:07</h6>
+										</div>
+
+										<div class="d-flex flex-column text-center mt-5 mb-4">
+											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+											<span class="small" style="color: #868B94">Stormy</span>
+										</div>
+
+										<div class="d-flex align-items-center">
+											<div class="flex-grow-1" style="font-size: 1rem;">
+												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+													</span></div>
+												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
+												</div>
+												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												</div>
+											</div>
+											<div>
+												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
+													width="100px">
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Footer 1 -->
+	<footer class="pt-75 pb-65 bg-light text-center footer_1">
+		<div class="container px-xl-0">
+			<div class="row justify-content-between align-items-center lh-40 links">
+				<div class="col-lg-4 col-sm-6 text-sm-right text-lg-left order-1 order-lg-0" data-aos="zoom-in"
+					data-aos-delay="150">
+					<a href="#" class="link mr-15 color-main">
+						About
+					</a>
+					<a href="#" class="link mx-15 color-main">
+						Policy
+					</a>
+					<a href="#" class="link mx-15 color-main">
+						Terms
+					</a>
+				</div>
+				<div class="mb-10 mb-lg-0 col-lg-auto order-0" data-aos=" zoom-in" data-aos-delay="0">
+					<a href=" #" class="link color-main cuatrovientos">
+						Cuatrovientos
+						<!-- <img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="0"> -->
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0" data-aos="zoom-in"
+					data-aos-delay="150">
+					<a href="#" class="link mr-15 color-main">
+						Contacts
+					</a>
+					<a href="#" class="mx-15 link color-main">
+						<i class="fab fa-twitter">
+						</i>
+					</a>
+					<a href="#" class="mx-15 link color-main">
+						<i class="fab fa-facebook-square">
+						</i>
+					</a>
+					<a href="#" class="ml-15 link color-main">
+						<i class="fab fa-instagram">
+						</i>
+					</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="mt-10 col-xl-4 col-lg-5 col-md-6 col-sm-8" data-aos="zoom-in" data-aos-delay="0">
+					<div class="color-heading text-adaptive">
+						Be sure to take a look at our Terms of Use
+						<br>and Privacy Policy
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- forms alerts -->
+	<!-- <div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+				aria-hidden="true">&times;</span></button>
+		Thanks for your message!
+	</div>
+	<div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+				aria-hidden="true">&times;</span></button>
+		Please, fill in required fields.
+	</div>
+	<div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+				aria-hidden="true">&times;</span></button>
+		<div class="message">An error occurred while sending data :( Please, check if your hosting supports PHP and check
+			how to set form data sending <a href="https://designmodo.com/startup/documentation/#form-handler" target="_blank"
+				class="link color-transparent-white">here</a>.</div>
+	</div> -->
+
+
+	<!-- Splide JS -->
+	<script src="js/splide.min.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- AOS JS -->
+	<script src="js/aos.js"></script>
+	<!-- Main JS -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
