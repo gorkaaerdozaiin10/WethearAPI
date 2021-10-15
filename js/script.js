@@ -1,20 +1,3 @@
-var splide = new Splide('#image-slider', {
-  type: 'loop',
-  perPage: 3,
-  perMove: 1,
-  gap: '0.5rem',
-  breakpoints: {
-    768: {
-      perPage: 2,
-    },
-    480: {
-      perPage: 1,
-    },
-  },
-});
-
-splide.mount();
-
 $(document).ready(function () {
   $(window).resize(function () {
     showMenuBtn();
@@ -70,7 +53,7 @@ $(document).ready(function () {
 
 let weather = {
   apiKey: '4c13649367c8d7f12098dbaac28662b4',
-  fetchWeather: (city) => {
+  fetchWeather: function (city) {
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q=' +
         city +
@@ -89,5 +72,44 @@ let weather = {
     document.querySelector('.cardTitle').innerHTML = name;
     document.querySelector('.cardImg').src =
       'https://openweathermap.org/img/wn/' + icon + '@2x.png';
+    document.querySelector('.cardTemp').innerHTML = temp + 'ºC';
+    document.querySelector('.cardDesc').innerHTML = description;
+    document.querySelector('.cardSpeed').innerHTML = speed + 'km/h';
+    document.querySelector('.cardHumidity').innerHTML = humidity + '%';
+  },
+  search: function () {
+    this.fetchWeather(document.querySelector('.search-input').value);
+    console.log(document.querySelector('.search-input').value);
   },
 };
+
+document.querySelector('.search-icon').addEventListener('click', function () {
+  weather.search();
+});
+
+document
+  .querySelector('.search-input')
+  .addEventListener('keyup', function (event) {
+    if (event.key == 'Enter') {
+      weather.search();
+    }
+  });
+
+weather.fetchWeather('Pamplona');
+
+var splide = new Splide('#image-slider', {
+  type: 'loop',
+  perPage: 3,
+  perMove: 1,
+  gap: '0.5rem',
+  breakpoints: {
+    768: {
+      perPage: 2,
+    },
+    480: {
+      perPage: 1,
+    },
+  },
+});
+
+splide.mount();

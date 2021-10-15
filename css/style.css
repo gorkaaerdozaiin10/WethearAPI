@@ -9452,6 +9452,22 @@ h3 {
   border-radius: 35px;
 }
 
+.splide .card .cardTemp {
+  color: #1c2331;
+}
+
+.splide .card .cardDesc {
+  color: #868b94;
+}
+
+.splide .card .cardConditions {
+  font-size: 1rem;
+}
+
+.splide .card .cardIcon {
+  color: #868b94;
+}
+
 [data-aos='fade-down'] {
   transform: translate3d(0, -35px, 0);
 }

@@ -196,6 +196,19 @@ h3 {
   .card {
     color: #4b515d;
     border-radius: 35px;
+
+    .cardTemp {
+      color: #1c2331;
+    }
+    .cardDesc {
+      color: #868b94;
+    }
+    .cardConditions {
+      font-size: 1rem;
+    }
+    .cardIcon {
+      color: #868b94;
+    }
   }
 }
 

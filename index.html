@@ -110,50 +110,7 @@
 	</div>
 	<!-- Header 1 -->
 	<header class="pt-195 pb-110 bg-light header_1">
-		<!-- <nav class="header_menu_1 pt-30 pb-30 mt-30">
-			<div class="container px-xl-0">
-				<div class="row justify-content-center align-items-center f-18 medium">
-					<div class="col-lg-3">
-						<a href="#" class="link img_link">
-							<img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="600">
-						</a>
-					</div>
-					<div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="450">
-						<a href="#" class="link color-heading mx-15">
-							Inicio
-						</a>
-						<a href="#" class="link color-heading mx-15">
-							Features
-						</a>
-						<a href="#" class="link color-heading mx-15">
-							Blog
-						</a>
-						<a href="#" class="link color-heading mx-15">
-							Shop
-						</a>
-						<a href="#" class="link color-heading f-16 mx-15">
-							<i class="fas fa-search">
-							</i>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-end align-items-center" data-aos="zoom-in"
-						data-aos-delay="600">
-						<a href="#" class="link mr-20 color-heading">
-							Sign In
-						</a>
-						<a href="#" class="btn sm action-1">
-							Sign Up
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav> -->
 		<div class="container">
-			<!-- <div class="mb-3 text-center d-block d-xl-none">
-				<a href="#" class="link img_link">
-					<img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="0">
-				</a>
-			</div> -->
 			<h1 class="big text-center" data-aos="zoom-in" data-aos-delay="0">
 				OpenWeather API
 			</h1>
@@ -201,22 +158,20 @@
 										</div>
 
 										<div class="d-flex flex-column text-center mt-5 mb-4">
-											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
-											<span class="small" style="color: #868B94">Stormy</span>
+											<h6 class="display-4 mb-0 font-weight-bold cardTemp"> 13°C </h6>
+											<span class="small cardDesc">Stormy</span>
 										</div>
 
 										<div class="d-flex align-items-center">
-											<div class="flex-grow-1" style="font-size: 1rem;">
-												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+											<div class="flex-grow-1 cardConditions">
+												<div><i class="fas fa-wind fa-fw cardIcon"></i> <span class="ms-1 cardSpeed"> 40 km/h
 													</span></div>
-												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
-												</div>
-												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												<div><i class="fas fa-tint fa-fw cardIcon"></i> <span class="ms-1 cardHumidity"> 84% </span>
 												</div>
 											</div>
 											<div>
 												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
-													width="100px">
+													width="100px" class="cardImg">
 											</div>
 										</div>
 
@@ -230,31 +185,29 @@
 						<div class="row d-flex justify-content-center align-items-center h-100">
 							<div class="col">
 
-								<div class="card" style="color: #4B515D; border-radius: 35px;">
+								<div class="card">
 									<div class="card-body p-4">
 
 										<div class="d-flex">
-											<h6 class="flex-grow-1">Warsaw</h6>
+											<h6 class="flex-grow-1 cardTitle">Pamplona</h6>
 											<h6>15:07</h6>
 										</div>
 
 										<div class="d-flex flex-column text-center mt-5 mb-4">
-											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
-											<span class="small" style="color: #868B94">Stormy</span>
+											<h6 class="display-4 mb-0 font-weight-bold cardTemp"> 13°C </h6>
+											<span class="small cardDesc">Stormy</span>
 										</div>
 
 										<div class="d-flex align-items-center">
-											<div class="flex-grow-1" style="font-size: 1rem;">
-												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+											<div class="flex-grow-1 cardConditions">
+												<div><i class="fas fa-wind fa-fw cardIcon"></i> <span class="ms-1 cardSpeed"> 40 km/h
 													</span></div>
-												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
-												</div>
-												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												<div><i class="fas fa-tint fa-fw cardIcon"></i> <span class="ms-1 cardHumidity"> 84% </span>
 												</div>
 											</div>
 											<div>
 												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
-													width="100px">
+													width="100px" class="cardImg">
 											</div>
 										</div>
 
@@ -268,31 +221,29 @@
 						<div class="row d-flex justify-content-center align-items-center h-100">
 							<div class="col">
 
-								<div class="card" style="color: #4B515D; border-radius: 35px;">
+								<div class="card">
 									<div class="card-body p-4">
 
 										<div class="d-flex">
-											<h6 class="flex-grow-1">Warsaw</h6>
+											<h6 class="flex-grow-1 cardTitle">Pamplona</h6>
 											<h6>15:07</h6>
 										</div>
 
 										<div class="d-flex flex-column text-center mt-5 mb-4">
-											<h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
-											<span class="small" style="color: #868B94">Stormy</span>
+											<h6 class="display-4 mb-0 font-weight-bold cardTemp"> 13°C </h6>
+											<span class="small cardDesc">Stormy</span>
 										</div>
 
 										<div class="d-flex align-items-center">
-											<div class="flex-grow-1" style="font-size: 1rem;">
-												<div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h
+											<div class="flex-grow-1 cardConditions">
+												<div><i class="fas fa-wind fa-fw cardIcon"></i> <span class="ms-1 cardSpeed"> 40 km/h
 													</span></div>
-												<div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span>
-												</div>
-												<div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span>
+												<div><i class="fas fa-tint fa-fw cardIcon"></i> <span class="ms-1 cardHumidity"> 84% </span>
 												</div>
 											</div>
 											<div>
 												<img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png"
-													width="100px">
+													width="100px" class="cardImg">
 											</div>
 										</div>
 
@@ -325,7 +276,6 @@
 				<div class="mb-10 mb-lg-0 col-lg-auto order-0" data-aos=" zoom-in" data-aos-delay="0">
 					<a href=" #" class="link color-main cuatrovientos">
 						Cuatrovientos
-						<!-- <img src="i/logo.svg" alt="Logo" class="img-fluid" data-aos="zoom-in" data-aos-delay="0"> -->
 					</a>
 				</div>
 				<div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0" data-aos="zoom-in"
@@ -357,25 +307,6 @@
 			</div>
 		</div>
 	</footer>
-	<!-- forms alerts -->
-	<!-- <div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-				aria-hidden="true">&times;</span></button>
-		Thanks for your message!
-	</div>
-	<div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-				aria-hidden="true">&times;</span></button>
-		Please, fill in required fields.
-	</div>
-	<div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-				aria-hidden="true">&times;</span></button>
-		<div class="message">An error occurred while sending data :( Please, check if your hosting supports PHP and check
-			how to set form data sending <a href="https://designmodo.com/startup/documentation/#form-handler" target="_blank"
-				class="link color-transparent-white">here</a>.</div>
-	</div> -->
-
 
 	<!-- Splide JS -->
 	<script src="js/splide.min.js"></script>
@@ -386,7 +317,7 @@
 	<!-- AOS JS -->
 	<script src="js/aos.js"></script>
 	<!-- Main JS -->
-	<script src="js/script.js"></script>
+	<script src="js/script.js" defer></script>
 </body>
 
 </html>
