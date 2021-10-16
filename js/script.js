@@ -45,9 +45,9 @@ $(document).ready(function () {
   }
 
   $('#btnCity').click(() => {
-    $('#image-slider').css('display', 'block');
+    $('.weatherContainer').css('display', 'block');
     $('.search').css('display', 'block');
-    $(window).scrollTop($('#image-slider').offset().top);
+    $(window).scrollTop($('.weatherContainer').offset().top);
   });
 });
 
@@ -60,7 +60,13 @@ let weather = {
         '&units=metric&appid=' +
         this.apiKey
     )
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          alert('No he podido encontrar lo que estás buscando.');
+          throw new Error('No he podido encontrar lo que estás buscando.');
+        }
+        return response.json();
+      })
       .then((data) => this.displayWeather(data));
   },
   displayWeather: (data) => {
@@ -68,7 +74,9 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    console.log(name, icon, description, temp, humidity, speed);
+    const { lon } = data.coord;
+    const { lat } = data.coord;
+    console.log(name, icon, description, temp, humidity, speed, lon, lat);
     document.querySelector('.cardTitle').innerHTML = name;
     document.querySelector('.cardImg').src =
       'https://openweathermap.org/img/wn/' + icon + '@2x.png';
@@ -79,7 +87,7 @@ let weather = {
   },
   search: function () {
     this.fetchWeather(document.querySelector('.search-input').value);
-    console.log(document.querySelector('.search-input').value);
+    /* console.log(document.querySelector('.search-input').value); */
   },
 };
 
@@ -96,20 +104,3 @@ document
   });
 
 weather.fetchWeather('Pamplona');
-
-var splide = new Splide('#image-slider', {
-  type: 'loop',
-  perPage: 3,
-  perMove: 1,
-  gap: '0.5rem',
-  breakpoints: {
-    768: {
-      perPage: 2,
-    },
-    480: {
-      perPage: 1,
-    },
-  },
-});
-
-splide.mount();
