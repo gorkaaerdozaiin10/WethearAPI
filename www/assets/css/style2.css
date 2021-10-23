@@ -70,13 +70,13 @@ button:hover::after {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px 0;
   align-items: center;
 }
 
-.navbar-logo-text {
-  font-size: 13px;
+.navbar-logo-title {
+  font-size: 32px;
   font-weight: 800;
   color: var(--dark-gray);
 }
